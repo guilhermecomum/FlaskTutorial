@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Flaskr - </title>
+  <title>Flaskr</title>
 
   <link rel="stylesheet" href="{{ url_for('static',
         filename='css/normalize.css') }}">
@@ -20,7 +20,6 @@
   <div class="row">
     <div class="small-10 columns">
       <h1>Flaskr</h1>
-      <hr />
     </div>
     <div class="small-2 columns">
       <div class=metanav>
@@ -34,6 +33,7 @@
   {% for message in get_flashed_messages() %}
     <div class=flash>{{ message }}</div>
   {% endfor %}
+      <hr />
 
   </div>
 
