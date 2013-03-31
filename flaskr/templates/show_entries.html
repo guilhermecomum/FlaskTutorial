@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block body %}
 <div class="row">
-  <div class="large-8 columns">
+  <div class="small-8 columns">
   {% if session.logged_in %}
     <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
       <dl>
